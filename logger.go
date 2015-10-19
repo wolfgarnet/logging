@@ -33,7 +33,7 @@ var levelNames map[int]string
 var format string
 
 func init() {
-	logger = log.New(os.Stdout, "*bl* ", 0)
+	logger = log.New(os.Stdout, "", 0)
 	levelNames = make(map[int]string)
 	levelNames[0] = "TRACE"
 	levelNames[1] = "DEBUG"
