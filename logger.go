@@ -92,6 +92,10 @@ func (l Logger) Debug(format string, v ...interface{}) {
 	log_(LevelDebug, format, v...)
 }
 
+func (l Logger) Info(format string, v ...interface{}) {
+	log_(LevelInfo, format, v...)
+}
+
 func (l Logger) Warning(format string, v ...interface{}) {
 	log_(LevelWarning, format, v...)
 }
